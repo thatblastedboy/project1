@@ -6,14 +6,14 @@ body {
     font-size: 16px;
 }
 
-img {
-    width: 100%;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .container {
@@ -21,10 +21,31 @@ header {
     margin: 0 auto;
 }
 
+img {
+    width: 100%;
+}
+
+/* Header section with name and logo*/
+
+#topbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #topbar {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .u-logo img {
     width: 100px;
     height: auto;
-    padding-top: 25px; 
+    padding-top: 25px;
 }
 
 .brand {
@@ -32,14 +53,16 @@ header {
 }
 
 .brand h1 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
     text-align: right;
     font-size: 44px;
     color: #02b3e4;
-    text-transform: uppercase;
-    margin: 0;
+}
 
+@media screen and (max-width: 768px) {
+    .brand h1 {
+        font-size: 24px;
+        text-align: center;
+    }
 }
 
 .brand p {
@@ -50,9 +73,18 @@ header {
     margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .brand p {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/* hero banner section */
+
 #hero {
-    margin: 50px auto;
-    background-image: url('img/hero-img.jpg');
+    margin: 40px auto;
+    background-image: url('/img/hero-img.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -62,20 +94,53 @@ header {
     text-align: center;
     height: 500px;
 }
-#hero h1 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    text-align: right;
-    font-size: 70px;
-    color: #02b3e4;
-    text-transform: uppercase;
-    margin: 0;
+
+@media screen and (max-width: 768px) {
+    #hero {
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+    }
 }
+
+#hero h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    #hero h1 {
+        font-size: 35px;
+    }
+}
+
+#hero p {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* projects section*/
+
+.feat-title h1 {
+    font-size: 30px;
+    color: #02b3e4;
+}
+
 #works {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
     grid-column-gap: 20px;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+    #works {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        width: 100%;
+    }
 }
 
 .my-project {
@@ -161,4 +226,14 @@ header {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+}
+
+
+/*footer*/
+
+footer {
+    margin: 40px auto;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
 }
