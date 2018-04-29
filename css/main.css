@@ -17,7 +17,7 @@ h1 {
 }
 
 .container {
-  width: 1000px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -30,12 +30,12 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-    #topbar {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        text-align: center;
-    }
+  #topbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .logo img {
@@ -113,6 +113,7 @@ h1 {
   text-transform: uppercase;
   padding-left: 10px;
 }
+
 @media screen and (max-width: 768px) {
   #hero p {
     font-size: 15px;
@@ -126,11 +127,13 @@ h1 {
   font-size: 30px;
   color: #02b3e4;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
   .feat-title h1 {
     padding-left: 20px;
   }
 }
+
 #works {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -148,10 +151,12 @@ h1 {
     width: 100%;
   }
 }
+
 .borderclass {
   border: 1px solid #2d3c49;
   border-radius: 10px;
 }
+
 .my-project {
   background-color: #2d3c49;
   position: relative;
@@ -165,6 +170,7 @@ h1 {
   border: 1px solid;
   border-radius: 10px;
 }
+
 .my-project * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -235,7 +241,7 @@ h1 {
 
 /*footer*/
 
-footer {
+#footer {
   margin: 40px auto;
   font-size: 10px;
   text-transform: uppercase;
